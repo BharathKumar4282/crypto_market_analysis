@@ -1,4 +1,7 @@
 # crypto_market_analysis
+This project was built as a self-learning initiative to understand
+real-world data analytics workflows using live cryptocurrency data.
+
 # Crypto Market Intelligence Dashboard
 
 An end-to-end data analytics project using real-time cryptocurrency data.
