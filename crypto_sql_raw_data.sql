@@ -14,3 +14,29 @@ CREATE TABLE crypto_table (
 );
 
 select * from crypto_table;
+
+-- TOP 5 COINS BY MARKET CAP
+select name,symbol,market_cap
+from crypto_table
+order by market_cap desc
+limit 5;
+
+-- TOP 10 CURRENT PRICE COINS
+select 
+name,
+symbol,
+current_price
+from crypto_table
+order by current_price desc
+limit 10;
+
+-- VOLATILITY TRENDS
+SELECT
+    name,
+    DATE(last_updated) AS date,
+    ABS(price_change_percentage_24h) AS volatility
+FROM crypto_table;
+
+
+
+
